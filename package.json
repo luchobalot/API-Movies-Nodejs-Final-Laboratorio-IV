@@ -1,0 +1,27 @@
+{
+  "name": "tp1-api-node",
+  "version": "1.0.0",
+  "description": "Trabajo Practico N1 - API Node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "tp1-api-node": "file:"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "eslint": "^9.11.1",
+    "globals": "^15.9.0",
+    "husky": "^9.1.6",
+    "nodemon": "^3.1.5"
+  }
+}
