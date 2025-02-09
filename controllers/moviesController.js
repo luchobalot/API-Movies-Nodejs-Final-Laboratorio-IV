@@ -6,7 +6,9 @@ const filterDetails = (movie) => {
     title: movie.title || 'Título no disponible',
     description: movie.overview || 'Descripción no disponible',
     release_date: movie.release_date || 'Fecha no disponible', 
-    genres: movie.genres ? movie.genres.map(genre => genre.name) : ['Géneros no disponibles'], 
+    genres: movie.genres && movie.genres.length > 0 
+      ? movie.genres.map(genre => genre.name) 
+      : ['Géneros no disponibles'], 
     vote_average: movie.vote_average !== undefined ? movie.vote_average : 'Puntaje no disponible',
     poster_path: movie.poster_path 
       ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` 
